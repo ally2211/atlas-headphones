@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Source Sans Pro-Regular';
+  src: url(fonts/SourceSansPro-Regular.otf);
+}
+
+
+@font-face {
+  font-family: 'Source Sans Pro-Bold';
+  src: url(fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-Semibold';
+  src: url(fonts/SourceSansPro-Semibold.otf);
+}
+
+
+
+@font-face {
+  font-family: 'Source Sans Pro-Extralight';
+  src: url(fonts/SourceSansPro-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-Light';
+  src: url(fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-LightIt';
+  src: url(fonts/SourceSansPro-LightIt.otf);
+}
+
+
+@font-face {
+  font-family: 'Source Sans Pro-Black';
+  src: url(fonts/SourceSansPro-Black.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-It';
+  src: url(fonts/SourceSansPro-It.otf);
+}
+
+
+
+div {
+  border: 1px solid #ddd;
+}
+
+
+root {
+  --text-color-white: #ffffff;
+  --text-color-black: #071629;
+  --footer-bg: #071629;
+  --link-hover: #FF6565;
+  --button-hover: opacity: 0.9;
+
+}
+
+
+
+h1, h2, h3, a, p {
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 60px;
+  width: 100%;
+}
+
+.logo img  {
+  
+}
+
+.menu {
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 60px;
+}
+
+.menu a {
+  font-family: Source Sans Pro-Regular;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 41px;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  background-image: url('images/headphones_hero_1.jpg');
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-family: Source Sans Pro-Regular;
+  color: var(--text-color-white);
+}
