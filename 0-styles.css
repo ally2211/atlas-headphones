@@ -209,7 +209,6 @@ body {
   justify-content: center;
   margin-top: 97px;
   max-width: 1400px;
-  width: 100%;
 
 
 }
@@ -218,8 +217,24 @@ body {
   justify-content: center;
   padding: 60px;
   text-align: center;
-  max-width: 207px;
-  width: 100%;
   margin: 0px;
+  max-width: 207px;
+  max-height: 180px;
+  flex-shrink: 0;
 }
 
+.icons h3 {
+  font-family: 'Source Sans Pro-Semibold';
+  font-size: 18px;
+}
+
+.icons p {
+  font-family: 'Source Sans Pro-Regular';
+  font-size: 14px;
+}
+
+.icons img {
+  max-width: 94px;
+  height: auto;
+  width: 100%;
+}
