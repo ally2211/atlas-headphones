@@ -174,13 +174,15 @@ body {
 .what-we-do-container {
   background-color: var(--text-color-white);
   color: var(--text-color-black);
+  text-align: center;
 }
 
 
 .what-we-do {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  margin: ;
+
 
 }
 
@@ -196,10 +198,14 @@ body {
 
 }
 
-.icons {
+.icon-sections {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+.icons {
+  margin: 30px;
 }
 
 .icons h3 {
