@@ -95,15 +95,16 @@ body {
 
 
 .logo img {
+  display: flex;
   width: 100%;
   max-width: 161px;
   height: auto;
-  flex-shrink: 0;
 }
 
 .menu {
   display: flex;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .menu a {
