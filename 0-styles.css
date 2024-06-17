@@ -81,6 +81,7 @@ body {
   height: 800px;
   background-image: url('images/headphones_hero_1.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -201,11 +202,16 @@ body {
 .icon-sections {
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .icons {
-  margin: 30px;
+  margin: 1%;
+  flex: 1 0 calc(25% - 2%);
+  box-sizing: border-box;
+
 }
 
 .icons h3 {
