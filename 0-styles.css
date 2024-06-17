@@ -208,9 +208,13 @@ body {
 }
 
 .icons {
+  width: 207px;
+  height: 180px;
   margin: 1%;
-  flex: 1 0 calc(25% - 2%);
   box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
