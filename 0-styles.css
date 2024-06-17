@@ -58,6 +58,19 @@ div {
 
 }
 
+a :hover {
+  color: #FF6565;
+}
+
+.desktop-menu :hover,
+.desktop-menu :active {
+  color: #FF6565;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
 
 
 h1, h2, h3, a, p {
@@ -69,6 +82,9 @@ h1, h2, h3, a, p {
 body {
   margin: 0px;
   padding: 0px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -148,6 +164,7 @@ body {
   .logo {
     margin: 0;
   }
+
 }
 
 .hamburger {
@@ -204,7 +221,7 @@ body {
   font-size: 16px;
   max-width: 637px;
   text-align: center;
-  margin: 0px;
+  margin: 20px;
 
 
 }
@@ -252,15 +269,11 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro-Regular';
-  max-width: 637px;
-  width: 100%;
-  height: auto;
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 97px;
-
+  padding: 20px;
 }
 
 .icon-sections {
@@ -269,6 +282,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 110px;
 }
 
 .icons {
