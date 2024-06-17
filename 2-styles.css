@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Source Sans Pro-Regular';
+  src: url(fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-Bold';
+  src: url(fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-Semibold';
+  src: url(fonts/SourceSansPro-Semibold.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-Extralight';
+  src: url(fonts/SourceSansPro-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-Light';
+  src: url(fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-LightIt';
+  src: url(fonts/SourceSansPro-LightIt.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-Black';
+  src: url(fonts/SourceSansPro-Black.otf);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro-It';
+  src: url(fonts/SourceSansPro-It.otf);
+}
+
+div {
+  border: 1px solid #ddd;
+}
+
+:root {
+  --text-color-white: #ffffff;
+  --text-color-black: #071629;
+  --footer-bg: #071629;
+  --link-hover: #FF6565;
+  --button-hover: opacity: 0.9;
+}
+@media only screen and (max-width: 600px) {
+  .our-results .lorem {
+    width: 335px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .our-results .lorem {
+    width: 637px;
+  }
+}
+
+.our-results {
+    background-image: url('/images/headphones_hero_2.jpg');
+    /* width: 100%; */
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.our-results .results {
+    color: var(--text-color-white);
+    line-height: 37.5px;
+    font-size: 32px;
+    margin-top: 141px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+    text-align: center;
+}
+.our-results .lorem {
+    /* width: 337px; */
+    text-align: center;
+    justify-content: center;
+    color: var(--text-color-white);
+    padding-bottom: 30px;
+}
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    justify-content: center;
+    /* width: 240px; */
+}
+.icon-col{
+    padding: 20px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container i {
+    font-size: 46px;
+    font-weight: 700;
+    align-content: center;
+    line-height: 26px;
+}
+.image-container img {
+    width: 190px;
+    height: 190px;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-white);
+    text-align: center;
+}
+.overlay i {
+    display: block;
+    margin-bottom: 10px;/*space betw. icon and text*/
+    width: 112px;
+}
+.overlay .dots-text1 {
+    font-weight: 700;
+    font-size: 46px;
+}
+.overlay .dots-text2 {
+    font-weight: 400;
+    font-size: 14px;
+    width: 111px;
+}
