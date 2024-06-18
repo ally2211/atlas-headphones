@@ -58,6 +58,19 @@ div {
 
 }
 
+a :hover {
+  color: #FF6565;
+}
+
+.desktop-menu :hover,
+.desktop-menu :active {
+  color: #FF6565;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
 
 
 h1, h2, h3, a, p {
@@ -69,6 +82,9 @@ h1, h2, h3, a, p {
 body {
   margin: 0px;
   padding: 0px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -78,37 +94,89 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 800px;
+  min-height: 400px;
   background-image: url('images/headphones_hero_1.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 60px;
+  padding: 30px;
   align-items: center;
 
 }
+
 
 
 .logo img {
+  display: flex;
   width: 100%;
   max-width: 161px;
   height: auto;
-  flex-shrink: 0;
 }
 
-.menu {
+.desktop-menu {
+  display: flex;
   align-items: center;
+  flex-shrink: 1;
 }
 
-.menu a {
+.desktop-menu a {
   font-family: Source Sans Pro-Bold;
   color: #ffffff;
   font-size: 12px;
   padding: 41px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  left: 21px;
+  top: 38px;
+}
+
+.desktop-menu {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+
+  .desktop-menu {
+  display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+}
+
+.hamburger {
+  background-image: url('images/menu.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
 }
 
 .hero {
@@ -116,7 +184,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding-bottom: 115px;
+  padding-bottom: 100px;
+  padding-top: 230px;
 }
 
 .hero h1 {
@@ -127,6 +196,7 @@ body {
   font-size: 32px;
   padding: 0px;
   margin: 0px;
+  text-align: center;
 
 }
 
@@ -151,7 +221,7 @@ body {
   font-size: 16px;
   max-width: 637px;
   text-align: center;
-  margin: 0px;
+  margin: 20px;
 
 
 }
@@ -181,8 +251,11 @@ body {
 .what-we-do {
   display: flex;
   flex-direction: column;
-  margin: ;
-
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 110px;
+  
 
 }
 
@@ -193,28 +266,60 @@ body {
 }
 
 .what-we-do p {
+  display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro-Regular';
-
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 97px;
+  padding: 20px;
 }
 
 .icon-sections {
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 110px;
 }
 
 .icons {
-  margin: 30px;
+  width: 207px;
+  height: 180px;
+  margin: 1%;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  padding: 1%
 }
 
+
+.icons img {
+  flex-direction: row;
+  overflow: hidden;
+
+}
+
+
 .icons h3 {
+  flex-direction: row;
   font-family: 'Source Sans Pro-Semibold';
   font-size: 18px;
+  margin-bottom: 10px;
+
 }
 
 .icons p {
+  flex-direction: row;
   font-family: 'Source Sans Pro-Regular';
   font-size: 14px;
+  margin-top: 10px;
+
 }
+
 
