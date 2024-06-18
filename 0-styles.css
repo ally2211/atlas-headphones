@@ -107,7 +107,7 @@ body {
   justify-content: space-between;
   padding: 30px;
   align-items: center;
-
+  position: relative;
 }
 
 
@@ -126,7 +126,7 @@ body {
 }
 
 .desktop-menu a {
-  font-family: Source Sans Pro-Bold;
+  font-family: Source Sans Pro-Semibold;
   color: #ffffff;
   font-size: 12px;
   padding: 41px;
@@ -134,62 +134,85 @@ body {
   overflow: hidden;
 }
 
-.menu {
-  display: none;
-  position: absolute;
+.desktop-menu {
   left: 21px;
   top: 38px;
 }
 
-.desktop-menu {
-  display: block;
-}
+
 
 @media screen and (max-width: 600px) {
-  .menu {
-    display: block;
+  .desktop-menu {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .logo {
+    margin: 0 auto;
+
+  }
+
+
+  .dropdown-links {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .hamburger-menu {
+    display: none;
   }
 
   .desktop-menu {
-  display: none;
-  }
-
-  .header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
   }
-
-  .logo {
-    margin: 0;
-  }
-
-
-
 }
-
+  
+  
+.hamburger-menu {
+  align-items: center;
+}
+  
 .hamburger {
+  display: inline-block;
   background-image: url('images/menu.png');
   background-size: cover;
   background-repeat: no-repeat;
-  border: none;
-  padding: 0;
-  background-color: transparent;
   width: 20px;
   height: 14px;
   cursor: pointer;
 }
-
-
-
-
-.dropdown-menu {
-
+  
+.hamburger::before {
+  content: "";
+  display: block;
 }
 
-.dropdown-menu a {
-  font-family: Source Sans Pro-Bold;
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger + .dropdown-links {
+  display: block;
+}
+
+.dropdown-links {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+
+
+.dropdown-links a {
+  font-family: Source Sans Pro-Semibold;
   color: #ffffff;
   font-size: 12px;
   padding: 12px 16px;
@@ -197,7 +220,7 @@ body {
   display: block;
 }
 
-.hamburger:focus + .dropdown-menu {
+.hamburger:focus + .dropdown-links {
   display: block;
 }
 
