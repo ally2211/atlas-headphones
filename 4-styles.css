@@ -537,3 +537,60 @@ input[type="text"] {
 }
 
 /*  */
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--footer-bg);
+  padding: 50px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  display: flex;
+  flex-direction: row;
+  width: 169px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-social img {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.copyright p {
+  display: flex;
+  color: var(--text-color-white);
+  font-family: 'Source Sans Pro-Regular';
+  font-size: 12px;
+  opacity: 0.3517;
+  flex-direction: row;
+  justify-content: center;
+}
