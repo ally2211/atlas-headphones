@@ -468,7 +468,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-.form{
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
   margin: auto;
   background: white;
   padding: 20px;
@@ -483,17 +491,21 @@ body {
   font-size: 32px;
   text-align: center;
   color: var(--text-color-black);
+  font-family: 'Source Sans Pro-Regular';
 }
+
 input[type="text"] {
   width: 335px;
   color: var(--text-color-black);
   position: relative;
+  font-family: 'Source Sans Pro-Semibold';
 
 }
 
 .contactMe textarea {
   width: 335px;
   color: var(--text-color-black);
+  font-family: 'Source Sans Pro-Semibold';
 
 
 }
@@ -504,24 +516,18 @@ input[type="text"] {
   opacity: 17.25%;
 }
 .rounded-button {
-  margin-left: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 162px;
-  height: 44px;
-  padding: 10px;
-  border: none;
-  background-color: red;
-  color: white;
-  text-align: center;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--link-hover);
+  color: var(--text-color-white);
+  font-family: Source Sans Pro-Bold;
   font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 10px;
-  border-top: 2px solid red;
-  border-bottom: 2px red;
-  box-sizing: border-box;
+  max-width: 164px;
+  width: 100%;
+  border-radius: 22px;
+  margin: 40px;
+  padding-block: 10px;
 }
 
 /*  */
