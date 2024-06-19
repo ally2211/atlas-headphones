@@ -1,6 +1,8 @@
 #  Web Design Headphones Desktop and Mobile 
-# Building a Web Page the Right Way
 
+###  Our Website is published here:  https://lustrous-trifle-3e1e5d.netlify.app/
+
+# Building a Web Page the Right Way
 Some guidelines we implemented to ensure your web page is well-structured and maintainable.
 
 ## Foundations
