@@ -3,7 +3,6 @@
   src: url(fonts/SourceSansPro-Regular.otf);
 }
 
-
 @font-face {
   font-family: 'Source Sans Pro-Bold';
   src: url(fonts/SourceSansPro-Bold.otf);
@@ -13,8 +12,6 @@
   font-family: 'Source Sans Pro-Semibold';
   src: url(fonts/SourceSansPro-Semibold.otf);
 }
-
-
 
 @font-face {
   font-family: 'Source Sans Pro-Extralight';
@@ -42,13 +39,9 @@
   src: url(fonts/SourceSansPro-It.otf);
 }
 
-
-
-div {
+/* div {
   border: 1px solid #ddd;
-}
-
-
+} */
 :root {
   --text-color-white: #ffffff;
   --text-color-black: #071629;
@@ -87,8 +80,6 @@ body {
   margin-right: auto;
 }
 
-
-
 .hero-box {
   display: flex;
   flex-direction: column;
@@ -101,7 +92,6 @@ body {
   background-position: center;
 }
 
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -109,8 +99,6 @@ body {
   align-items: center;
   position: relative;
 }
-
-
 
 .logo img {
   display: flex;
@@ -139,8 +127,6 @@ body {
   top: 38px;
 }
 
-
-
 @media screen and (max-width: 600px) {
   .desktop-menu {
     display: none;
@@ -152,7 +138,6 @@ body {
     margin: 0 auto;
 
   }
-
 
   .dropdown-links {
     top: 80px;
@@ -209,8 +194,6 @@ body {
   text-align: center;
 }
 
-
-
 .dropdown-links a {
   font-family: Source Sans Pro-Semibold;
   color: #ffffff;
@@ -257,8 +240,6 @@ body {
   margin: 0px;
 }
 
-
-
 .hero p {
   display: flex;
   flex-direction: column;
@@ -268,8 +249,6 @@ body {
   max-width: 637px;
   text-align: center;
   margin: 20px;
-
-
 }
 
 .hero button {
@@ -286,14 +265,11 @@ body {
   margin: 40px;
   padding-block: 10px;
 }
-
 .what-we-do-container {
   background-color: var(--text-color-white);
   color: var(--text-color-black);
   text-align: center;
 }
-
-
 .what-we-do {
   display: flex;
   flex-direction: column;
@@ -301,16 +277,11 @@ body {
   align-items: center;
   width: 100%;
   margin-top: 110px;
-  
-
 }
-
 .what-we-do h2 {
   flex-direction: column;
   font-family: 'Source Sans Pro-Semibold';
-
 }
-
 .what-we-do p {
   display: flex;
   flex-direction: column;
@@ -321,7 +292,6 @@ body {
   margin-bottom: 97px;
   padding: 20px;
 }
-
 .icon-sections {
   display: flex;
   flex-direction: row;
@@ -330,7 +300,6 @@ body {
   flex-wrap: wrap;
   margin-bottom: 110px;
 }
-
 .icons {
   width: 207px;
   height: 180px;
@@ -343,15 +312,10 @@ body {
   flex-direction: column;
   padding: 1%
 }
-
-
 .icons img {
   flex-direction: row;
   overflow: hidden;
-
 }
-
-
 .icons h3 {
   flex-direction: row;
   font-family: 'Source Sans Pro-Semibold';
@@ -359,7 +323,6 @@ body {
   margin-bottom: 10px;
 
 }
-
 .icons p {
   flex-direction: row;
   font-family: 'Source Sans Pro-Regular';
@@ -367,9 +330,6 @@ body {
   margin-top: 10px;
 
 }
-
-
-
 .our-results {
     background-image: url('/images/headphones_hero_2.jpg');
     /* width: 100%; */
@@ -378,7 +338,6 @@ body {
     flex-direction: column; 
     justify-content: center;
 }
-
 .our-results .results {
     color: var(--text-color-white);
     line-height: 37.5px;
@@ -460,8 +419,7 @@ body {
   }
 }
 
-
-/* Contact Me Section */
+/* Contact Us Section */
 .contactMe {
   margin: auto;
   display: flex;
@@ -489,7 +447,6 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 } */
 
-
 .contactMe p {
   margin-top: 100px;
   font-size: 32px;
@@ -503,17 +460,12 @@ input[type="text"] {
   color: var(--text-color-black);
   position: relative;
   font-family: 'Source Sans Pro-Semibold';
-
 }
-
-
 
 .contactMe textarea {
   width: 335px;
   color: var(--text-color-black);
   font-family: 'Source Sans Pro-Semibold';
-
-
 }
 .bottom-border {
   border: none;
@@ -536,9 +488,7 @@ input[type="text"] {
   padding-block: 10px;
 }
 
-/*  */
-
-
+/* footer section */
 .footer {
   display: flex;
   flex-direction: column;
